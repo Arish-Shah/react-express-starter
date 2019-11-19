@@ -1,12 +1,12 @@
-import React from 'react';
-import Users from './components/Users/Users';
+import React from 'react'
+import Users from './components/Users/Users'
 
-function App() {
-	return (
-		<div className="App">
-			<Users />
-		</div>
-	);
+const App = () => {
+  return (
+    <div className="App">
+      <Users />
+    </div>
+  )
 }
 
-export default App;
+export default App
