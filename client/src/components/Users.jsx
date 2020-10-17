@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react'
-import styles from './Users.module.css'
+import React, { useState, useEffect } from 'react';
+import styles from './Users.module.css';
 
 const Users = () => {
-  const [users, setUsers] = useState([])
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    getUsers()
-  }, [])
+    getUsers();
+  }, []);
 
   const getUsers = async () => {
-    const response = await fetch('/api/users')
-    const json = await response.json()
-    setUsers(json)
-  }
+    const response = await fetch('/api/users');
+    const json = await response.json();
+    setUsers(json);
+  };
 
   return (
     <div className={styles.Users}>
@@ -25,7 +25,7 @@ const Users = () => {
         ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Users
+export default Users;
